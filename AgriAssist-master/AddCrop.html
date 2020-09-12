@@ -1,0 +1,49 @@
+<html>
+<Head>
+	<Title>  AgriAssist/AddCrop  </Title>
+</Head>
+
+<Body>
+	
+	<h1><center>Welcome to AgriAssist</center></h1>
+	
+	<form action="AddCrop_2.php" method="POST">
+     <center>
+			 <table>
+			 <th><font color="red" face="comic sans ms" size="5"><b>Enter details for the new crop:</b></th> 
+			 
+			 <tr>
+			 <td><b>Crop Name:</b></td>
+			 <td><b><input type="text"  placeholder="" required="required" name="prod_name" id='prod_name' value="" size="15" onblur="FormValidation2()"/><div id="div2"></div></b></td>
+			 </tr>
+			 
+			 <tr>
+			 <td><b>Quantity(in kgs):</b></td>
+			 <td><b><input type="text"  placeholder="" min='0' max='200' required="required" name="stk_qty" id='stk_qty' value="" size="15" onblur="FormValidation2()"/><div id="div2"></div></b></td>
+			 </tr>
+			 
+			 <tr>
+			 <td><b>Rate(per kg):</b></td>
+			 <td><b><input  type="number"  placeholder="" required="required" name="rate" id='rate' value="" size="15" onblur="FormValidation2()"/><div id="div2"></div></b></td>
+			 </tr>
+			 
+			 <tr>
+			 <td><b>Variety:</b></td>
+			 <td><b><input  type="text"  placeholder="" required="required" name="variety" id='variety' value="" size="15" onblur="FormValidation2()"/><div id="div2"></div></b></td>
+			 </tr>
+			 
+			 <tr>
+			 <td><b>Category:</b></td>
+			 <td><b><select name="category" required="required"  value="">
+                     <option>Food</option>
+                     <option>Cash</option>
+                     </select><div id="div1"></div></b>
+			 </td>
+			 </tr>
+			 </table>
+             <input type="submit" value="SUBMIT" name="sbmt"/><br>
+    <br/>
+	</form>
+	
+</Body>
+</html>
